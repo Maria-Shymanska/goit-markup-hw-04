@@ -155,6 +155,21 @@ img {
 
 /*------ main------- */
 
+.hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-top: auto;
+  background-image: url(../images/image.1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: #c4c4c4;
+}
+
+.hero {
+  background-image: linear-gradient();
+}
+
 .hero-section {
   background-color: #2f303a;
   padding-top: 200px;
