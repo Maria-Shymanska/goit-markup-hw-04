@@ -301,7 +301,7 @@ img {
   display: flex;
 }
 
-.about-list {
+.clients-list {
   display: flex;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -331,6 +331,7 @@ img {
   line-height: 1.16;
   margin-bottom: 50px;
   text-align: center;
+  justify-content: center;
 }
 .about-title {
   font-weight: 500;
@@ -383,6 +384,7 @@ img {
   line-height: 1.16;
   text-align: center;
   margin: 50px;
+  justify-content: center;
 }
 
 .clients-list {
@@ -500,6 +502,16 @@ img {
 
 /* --main-- */
 
+.examples-item {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.examples-item-list:first-child {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .filtres-list {
   display: flex;
   margin-bottom: 50px;
