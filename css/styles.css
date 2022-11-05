@@ -163,9 +163,9 @@ img {
   margin-right: 10px;
 }
 
-.header-item:hover .icon-mail,
-.header-item:focus .icon-phone {
-  color: #2196f3;
+.header-tel:hover .icon-phone,
+.header-link-mail:focus .icon-mail {
+  color: var(--accent-color--);
 }
 
 /*------ main------- */
@@ -212,6 +212,7 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
   padding: 10px 32px 10px 32px;
+  display: block;
 }
 
 .hero-btn:hover,
@@ -220,12 +221,10 @@ img {
 }
 
 /* --benefits-- */
-.hero-container {
+.container {
   display: flex;
   text-align: center;
   justify-content: center;
-  width: 270px;
-  height: 120;
 }
 .visually-hidden {
   position: absolute;
@@ -430,7 +429,7 @@ img {
 
 /* -----footer------- */
 
-.footer-section {
+.footer {
   background-color: var(--background-footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -498,6 +497,13 @@ img {
 
 /* --main-- */
 
+.filtres-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  gap: 8px;
+}
+
 .examples-item {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -507,12 +513,6 @@ img {
 .examples-item-list:first-child {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.filtres-list {
-  display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
-  gap: 8px;
 }
 
 .btn-main {
@@ -539,6 +539,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  text-align: center;
+  justify-content: center;
 }
 
 .img-portfolio-text {
@@ -582,6 +584,7 @@ footer {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
 .first-part {
   color: #2196f3;
 }
