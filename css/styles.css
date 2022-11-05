@@ -139,13 +139,13 @@ img {
 }
 
 .header-link-mail {
-  font-family: Roboto sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
+  color: var(--secondary-text-color);
 }
 
 .header-tel {
@@ -155,15 +155,15 @@ img {
   color: var(--secondary-text-color);
 }
 .icon-mail {
-  fill: var(--accent-color);
+  fill: currentColor;
   margin-right: 10px;
 }
 .icon-phone {
-  fill: var(--accent-color);
+  fill: currentColor;
   margin-right: 10px;
 }
 
-.header-tel:hover .icon-phone,
+.header-link-mail:hover .icon-mail,
 .header-link-mail:focus .icon-mail {
   color: var(--accent-color--);
 }
@@ -221,7 +221,7 @@ img {
 }
 
 /* --benefits-- */
-.container {
+.our-team {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -265,7 +265,7 @@ img {
 .icon-name {
   width: 270;
   height: 120;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   background-color: #f5f4fa;
 }
 
@@ -311,11 +311,10 @@ img {
 }
 
 /* --team-- */
-.container-team {
-  display: flex;
-}
 
 .socials-item {
+  display: flex;
+  text-align: center;
   width: 44px;
   height: 44px;
 }
@@ -380,7 +379,7 @@ img {
   fill: currentColor;
 }
 
-/* постійні клієнти */
+/*---постійні клієнти--- */
 
 .section-clients {
   display: flex;
@@ -410,10 +409,6 @@ img {
   border: 1px solid var(--socials-icon-color);
 }
 
-.clients-icon {
-  fill: var(--socials-icon-color);
-}
-
 .clients-link {
   display: flex;
   text-align: center;
@@ -422,9 +417,13 @@ img {
   height: 100%;
   padding: 16px 32px;
 }
-.clients-link:hover,
-.clients-link:focus {
-  fill: var(--accent-color);
+
+.clients-icon {
+  color: var(--socials-icon-color--);
+}
+.clients-item:hover,
+.clients-item:focus {
+  color: var(--accent-color--);
 }
 
 /* -----footer------- */
@@ -611,4 +610,26 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-text-color);
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.text-footer {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.socials-item {
+  color: rgba(255, 255, 255, 0.1);
+}
+.socials-list {
+  display: flex;
 }
